@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="378.0" prefWidth="458.0" spacing="20.0" stylesheets="@addstudent.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentmanageproject.LoginScreenController">
+   <children>
+      <AnchorPane prefHeight="37.0" prefWidth="418.0">
+         <children>
+            <ImageView fitHeight="440" fitWidth="640" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@UQU%20picture.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="41.0" prefHeight="427.0" prefWidth="557.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="75.0" prefWidth="253.0" styleClass="title" text="Login to system" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" text="User Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userNametxt" prefHeight="33.0" prefWidth="605.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Passwordtxt" prefHeight="33.0" prefWidth="386.0" />
+                  <Label fx:id="result" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="31.0" prefWidth="111.0" text="Login" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

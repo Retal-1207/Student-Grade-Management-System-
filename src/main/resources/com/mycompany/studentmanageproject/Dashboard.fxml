@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@addstudent.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentmanageproject.DashboardController">
+   <children>
+      <ImageView fitHeight="440.0" fitWidth="736.0" opacity="0.17" pickOnBounds="true">
+         <image>
+            <Image url="@UQU%20picture.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="400.0" prefWidth="687.0">
+         <children>
+            <Label layoutX="238.0" layoutY="33.0" styleClass="title" text="Dashboard" textFill="#125123">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="96.0" layoutY="165.0" mnemonicParsing="false" onAction="#AddStudents" prefHeight="35.0" prefWidth="181.0" text="Add Students" />
+            <Button layoutX="353.0" layoutY="165.0" mnemonicParsing="false" onAction="#AddGrade" prefHeight="35.0" prefWidth="181.0" text="Add Grades" />
+            <Button layoutX="96.0" layoutY="229.0" mnemonicParsing="false" onAction="#SaveToFile" prefHeight="35.0" prefWidth="181.0" text="Save Students" />
+            <Button layoutX="353.0" layoutY="229.0" mnemonicParsing="false" onAction="#ReadFromFile" prefHeight="35.0" prefWidth="181.0" text="Load Students Data" />
+            <Button layoutX="96.0" layoutY="306.0" mnemonicParsing="false" onAction="#ViewStudent" prefHeight="35.0" prefWidth="181.0" text="View Students" />
+            <Button layoutX="353.0" layoutY="306.0" mnemonicParsing="false" onAction="#Report" prefHeight="35.0" prefWidth="181.0" text="Report" />
+            <Label fx:id="resulttlabel" alignment="CENTER" layoutX="115.0" layoutY="377.0" prefHeight="17.0" prefWidth="423.0" />
+            <Label layoutX="212.0" layoutY="89.0" text="Select the task you want to perform" textFill="#125123">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

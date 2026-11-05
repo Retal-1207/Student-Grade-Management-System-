@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: #f4f7fb;
+    -fx-font-family: "Arial";
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B5E20;
+}
+
+.button {
+    -fx-background-color: #1B5E20;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 18 8 18;
+}
+
+.button:hover {
+    -fx-background-color: #163a5c;
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: white;
+    -fx-border-color: #b7c9d9;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 7;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #d0d7de;
+    -fx-border-radius: 6;
+}
+
+.mainFxmlClass {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+}
+
